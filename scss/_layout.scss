@@ -54,4 +54,4 @@ body {
 	overflow: hidden;
 }
 /* Sticky footer */
-@include sticky-footer(290px, '#page','#main','#colophon');
+@include sticky-footer(200px, '#page','#main','#colophon');
