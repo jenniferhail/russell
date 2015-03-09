@@ -1,6 +1,8 @@
 #site-header {
 	background-color: $mountain;
 	position: fixed;
+	top: 0;
+	left: 0;
 	z-index: 250;
 	opacity: 0.9;
 	width: 100%;
@@ -9,16 +11,20 @@
 	img {
 		height: auto;
 	}
-	.blog-title a {
-		color: $russell;
-		text-align: left;
-		font-weight: 300;
-		letter-spacing: 0.05px;
-		font-size: 3.25em;
-		float: left;
-		line-height: 45px;
+	.blog-title {
 		position: relative;
-		left: 25px;
-		font-style: italic;
+		top: 8px;
+		a {
+			color: $russell;
+			text-align: left;
+			font-weight: 300;
+			letter-spacing: 0.05px;
+			font-size: 3.25em;
+			float: left;
+			line-height: 45px;
+			position: relative;
+			left: 25px;
+			font-style: italic;
+		}
 	}
 }
