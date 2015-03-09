@@ -1,0 +1,40 @@
+.widget {
+	clear: both;
+	margin: 0 auto;
+	padding: 0 0 20px;
+	width: 220px;
+}
+.widget-title {
+	color: $headertext;
+	text-align: left;
+	clear: both;
+	line-height: 1em;
+	padding-bottom: 0.5em;
+	//text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+.widget ul {
+	margin: 0;
+	li {
+		//margin-left: 1.5em;
+		list-style: none;
+	}
+}
+
+/* Special Classes */
+.no-border {
+	border-bottom: none;
+	margin-bottom: 0;
+	padding:  0;
+}
+
+/* Search Widget */
+.widget_search {
+	form {
+		margin: 0 0 10px;
+	}
+	#s {
+		width: 95%;
+		display: inline-block;
+	}
+}

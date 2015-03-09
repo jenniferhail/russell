@@ -1,0 +1,70 @@
+#access {
+	margin: 0;
+	float: right;
+	right: 25px;
+	position: relative;
+	top: 20px;
+	ul {
+		margin: 0;
+		list-style: none;
+		li {
+			display: inline-block;
+			a {
+				letter-spacing: 0.1em;
+				padding: 0 15px;
+				text-decoration: none;
+				cursor: pointer;
+				font-family: $main;
+				font-size: 12px;
+				font-weight: normal;
+				text-transform: uppercase;
+			}
+		}		
+	}
+}
+
+.nav-content {
+	width: 100%;
+	div ul li a:hover {
+		opacity: 0.6;
+		//color: $grey !important;
+	}
+}
+
+#nav-below {
+	.nav-previous a,
+	.nav-next a {
+		color: $links-main;
+		height: 20px;
+		padding: 10px;
+		border: 1px solid $white;
+		border-radius: 8px;
+		&:hover {
+			color: $grey;
+			background-color: $white;
+		}
+	}
+	h3 {
+		margin: 30px 0px 40px;	
+	}
+}
+
+
+//.nav-open.expand .nav-title:hover {
+//	cursor: pointer;
+//	opacity: 0.6;
+//}
+
+/* BONUS: Add some fancy arrow indicators next to the titles that switch direction on click */
+//.nav-open.expand .nav-title::after {
+//	content: '\25BC'; /* Oh hey there, fancy entity, you are impossible to remember: http://www.evotech.net/articles/testjsentities.html */
+//	color: #ffdd00;
+//	padding-left: 20px;
+//	font-size: 10px;
+//}
+
+//.nav-open.expand.collapse .nav-title::after {
+//	content: '\25B2';
+//}
+
+

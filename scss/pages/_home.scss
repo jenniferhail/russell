@@ -1,0 +1,61 @@
+#rg-container {
+	margin: 80px auto;
+	@include bp(mama-bear) {
+		width: 90%;
+	}
+}
+
+.featured-image {
+	text-align: center;
+	@include bp(mama-bear) {
+		margin: 0 auto;
+	}
+}
+.intro-text {
+	color: $white;
+	text-align: center;
+	-webkit-font-smoothing: antialiased;
+	@include bp(mama-bear) {
+		width: 755px;
+		margin: 0 auto;
+	}
+	p {
+		font-size: 1.25em;
+		margin-bottom: 0 !important;
+	}
+}
+
+.sketchbook {
+	width: $width;
+	max-width: 2400px;
+	background: $secondary;
+	padding: 80px 0px;
+	margin: 0 auto;
+	.sketches {
+		margin: auto;
+		padding: 0 20px;
+		background: url(assets/images/sketchbook.png) no-repeat;
+		background-size: auto 100%;
+	}
+}
+.rgsketch {
+	//width: 495px!important;
+	//margin: 5px;
+}
+ul.bxslider {
+	margin: 0;
+}
+#book {
+	background: url(assets/images/sketchbook.png) no-repeat;
+	background-size: 100% auto;
+	margin: 0 100px 0 0;
+	padding: 20px;
+	li {
+		display: inline;
+		margin: 20px 25px;
+		img {
+			width: 45%;
+		}
+	}
+
+}

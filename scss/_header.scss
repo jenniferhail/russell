@@ -1,0 +1,28 @@
+#site-header {
+	background-color: $mountain;
+	margin-bottom: 45px;
+	position: relative;
+	z-index: 250;
+	opacity: 0.9;
+	width: 100%;
+	padding: 15px 0 0;
+	overflow: hidden;
+	img {
+		height: auto;
+	}
+	@include bp(baby-bear) {
+		height: 6.5em;
+	}
+	.blog-title a {
+		color: $russell;
+		text-align: left;
+		font-weight: 300;
+		letter-spacing: 0.05px;
+		font-size: 3.25em;
+		float: left;
+		line-height: 45px;
+		position: relative;
+		left: 25px;
+		font-style: italic;
+	}
+}

@@ -1,0 +1,99 @@
+/* List-style-type makes sure there aren't any bullets in front of the buttons */
+.load-portfolio {
+	//width: 610px;
+	width: 100%;
+	height: 22px;
+	margin: 20px 0 35px;
+	list-style-type: none;
+}
+
+/* Floating left lines them up in a horizontal row, the right margin spaces them out */
+.load-portfolio li {
+	height: 22px;
+	float: left;
+	margin: 0 10px 25px 0;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+/* The padding and background color are what make it look like a button */
+.load-portfolio li a {
+	height: 20px;
+	padding: 10px;
+	border: 1px solid $white;
+	border-radius: 8px;
+	color: $white;
+	text-decoration: none;
+}
+
+/* When we hover on the button, the colors change */
+.load-portfolio li a:hover {
+	background: $white;
+	color: $grey;
+}
+
+/* Let's make the active job type a different color as well */
+.load-portfolio li.active a {
+	background: $white;
+	color: $grey;
+	&:hover {
+		background: $grey;
+		color: $white;
+	}
+}
+
+/*Again getting rid of the bullets*/
+
+.portfolio-grid {
+    width: 100%;
+    margin: 0;
+    list-style-type: none;
+}
+
+/*Floating left gets us the grid. There's some stuff in here you probably could omit, like the height and width.*/
+.portfolio-grid li {
+    //width: 300px;
+    float: left;
+    //height: 204px;
+    @include bp(brother-bear) {
+    	width: 40%;
+    	max-width: 300px;
+    }
+    @include bp(mama-bear) {
+    	width: 27%;
+    }
+    @include bp(papa-bear) {
+    	width: 254px;
+    }
+    margin:0 20px 20px 0;
+    text-align: justify;
+    padding: 20px;
+}
+
+/*Let's get that title to display like a nice label. If you wanted to get really fancy you could add some opacity values.*/
+.portfolio-grid .portfolio-title {
+    display: block;
+    //width: 300;
+    padding: 15px 5px 0px;
+    background: #ffffff;
+    position: relative;
+    //bottom: 16px;
+    //font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.pfpiece {
+	background-color: #ffffff;
+}
+.clear {
+	float: clear;
+}
+
+.portfolio-image {
+	width: 100%;
+	text-align: center;
+}
+.wp-post-image.attachment-large {
+	margin: auto;
+}

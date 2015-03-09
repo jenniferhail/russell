@@ -1,0 +1,60 @@
+/*!
+Theme Name: Russell
+Theme URI: https://github.com/jenniferhail/russell.git
+Author: Jennifer Hail
+Author URI: http://jenniferhail.com
+Description: Theme description here.
+Version: 0.1
+License: The MIT License (MIT)
+License URI: http://opensource.org/licenses/MIT
+Tags: one-column, two-column, full-width-template, custom menu
+Text Domain: starter-theme
+*/
+
+/* FONTS
+-------------------------- */
+/* Uncomment/use this file if you install any custom fonts*/
+ @import "fonts/all";
+
+/* COMPASS
+-------------------------- */
+/* Uncomment if using Compass
+ @import "compass/css3";
+ @import "compass/utilities";
+ @import "compass/typography/lists";
+ @import "compass/typography/text"; */
+
+/* RESET & BASE
+------------------ */
+@import "reset";
+@import "mixins";
+@import "base";
+
+/* =LAYOUTS
+------------------ */
+@import "layout";
+@import "header";
+@import "nav";
+@import "footer";
+
+/* =CONTENT
+------------------ */
+@import "typography";
+@import "forms";
+
+/* =COMPONENTS
+------------------ */
+/* Includes password protection for pages and posts, 404 page */
+@import "components";
+
+
+/* =PROJECT PAGES SPECIFIC
+------------------ */
+@import "content";
+@import "pages/all";
+@import "pages/portfolio";
+@import "pages/home";
+
+/* =BLOG SPECIFIC
+------------------ */
+@import "blog/all";

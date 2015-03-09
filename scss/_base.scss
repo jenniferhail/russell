@@ -1,0 +1,46 @@
+/* BASE VARIABLES
+ *******************/
+
+/* Sizes */
+//$width: 1000px;
+$width: 100%;
+//$width-outer: $width + 30px;
+$width-outer: $width;
+
+/* Colors */
+
+$black: #000;
+$white: #fff;
+$grey: #b3b3b3;
+$blue: #4c5364;
+
+/* New Color Palette */
+
+$carbon: #000000;
+$mountain: #555555;
+$deepsea: #313E50;
+$sand: #ECEBE4;
+$alpine: #F3FCF0;
+
+
+
+$russell: $carbon;
+$text: $mountain;
+$headertext: $grey;
+$links: $grey;
+$links-main: $white;
+$nav: $carbon;
+$nav-hover: $grey;
+$hover: $carbon;
+$primary: $grey;
+$secondary: $deepsea;
+$tertiary: $carbon;
+
+$bg: $sand;
+
+/* Fonts */
+$main: "Futura", sans-serif;
+$body: "PT Serif", serif;
+
+/* Borders */
+$border: 1px solid $carbon;

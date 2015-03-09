@@ -1,0 +1,84 @@
+.entry-title,
+.entry-title a {
+	clear: both;
+	line-height: 1em;
+	padding-bottom: 0.5em;
+	//text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+.page-title {
+	color: $headertext;
+	text-align: center;
+}
+.sketchbook .page-title {
+	color: $white;
+}
+.portfolio-page-title {
+	color: $white;
+	text-align: center;
+}
+.post header.entry-header h1 {
+	.entry-title,
+	.entry-title a {
+		color: $grey;
+	}
+}
+.entry-meta {
+	clear: both;
+}
+.entry-date {
+	color: LINKCOLOR;
+	font-size: 11px;
+	padding-bottom: 2px;
+}
+.entry-header {
+	text-align: center;
+	padding: 1em 0 3em;
+}
+
+/* Handle sticky posts */
+.sticky {	
+}
+p.post-categories {
+	//border-top: 1px solid #000;
+}
+.post-categories {
+	border-top: 1px solid $grey;
+	ul {
+		list-style: none;
+		li {
+			display: inline;
+			//border: 1px solid $blue;
+			//border-radius: 8px;
+			//padding: 3px 20px;
+			margin: 0 0 5px 5px;
+			//float: right;
+			//position: relative;
+			//right: 0;
+			//top: 0px;
+		}
+	}
+}
+
+
+.type-post {
+	background-color: $white;
+}
+.type-post .has-post-thumbnail {
+	overflow: hidden;
+}
+.div-cats {
+	width: 45%;
+	float: right;
+}
+.feat-image {
+	float: left;
+	width: 30%;
+	//padding-top: 10px;
+}
+.feat-image-post {
+	float: left;
+	width: 67%;
+	margin-left: 3%;
+	//padding-left: 30px;
+}
