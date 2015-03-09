@@ -9,9 +9,6 @@
 	img {
 		height: auto;
 	}
-	@include bp(baby-bear) {
-		height: 6.5em;
-	}
 	.blog-title a {
 		color: $russell;
 		text-align: left;
