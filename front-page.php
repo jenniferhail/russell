@@ -40,40 +40,4 @@ get_header(); ?>
 </div>
 </div>
 
-<section class="sketchbook">
-
-	<header class="entry-header">
-		<h1 class="entry-title page-title"><?php the_field( 'subtitle', 1405 ); ?></h1>
-	</header>
-		
-	<div class="sketches">		
-
-		<ul class="bxslider">
-		
-		<?php $rgsketches = new WP_Query( 'post_type=sketch' );
-
-		if ( $rgsketches->have_posts() ) : while ( $rgsketches->have_posts() ) : $rgsketches->the_post(); ?>
-
-    	    <li class="rgsketch" data-id="post-<?php the_id(); ?>" data-type="">
-        
-        	    <?php 
- 
-					$image = get_field('sketch-image');
- 
-					if( !empty($image) ): ?>
- 
-					<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
- 
-				<?php endif; ?>
-                        
-        	</li>
-
-    	<?php endwhile; endif; wp_reset_postdata(); ?>
-
-        </ul>
-
-	</div>
-
-</section><!-- #home-sketches -->
-
 <?php get_footer(); ?>
