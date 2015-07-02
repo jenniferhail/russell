@@ -18,7 +18,9 @@
 	margin: 0 10px 25px 0;
 	text-transform: uppercase;
 	text-decoration: none;
-	font-size: 12px;
+	font-size: 10px;
+	letter-spacing: 1px;
+	font-family: $main;
 }
 
 /* The padding and background color are what make it look like a button */
@@ -26,7 +28,6 @@
 	height: 20px;
 	padding: 10px;
 	border: 1px solid $white;
-	border-radius: 8px;
 	color: $white;
 	text-decoration: none;
 }
@@ -78,14 +79,16 @@
 /*Let's get that title to display like a nice label. If you wanted to get really fancy you could add some opacity values.*/
 .portfolio-grid .portfolio-title {
     display: block;
-    //width: 300;
     padding: 15px 5px 0px;
     background: #ffffff;
     position: relative;
-    //bottom: 16px;
-    //font-size: 10px;
     text-transform: uppercase;
     text-align: center;
+    h3 {
+    	font-weight: 400;
+	    font-size: 1em;
+	    letter-spacing: 1px;
+    }
 }
 .pfpiece {
 	background-color: #ffffff;

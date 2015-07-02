@@ -10,7 +10,7 @@
 		list-style: none;
 		li {
 			display: inline-block;
-			&.current-menu-item {
+			&.current-menu-item a {
 				color: $hover;
 			}
 			a {
