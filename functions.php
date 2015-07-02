@@ -154,6 +154,84 @@ function starter_theme_scripts_method() {
 
 add_action( 'wp_enqueue_scripts', 'starter_theme_scripts_method' );
 
+/* THEME LOGIN LOGO
+ ========================== */
+function my_login_logo() { ?>
+    <style type="text/css">
+/*    	body, html {
+    		background: #ffffff;
+    	}*/
+    	#login {
+    		padding: 6% 0 0;
+    	}
+        .login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/site-login-logo.png);
+            background-size: 80px;
+            margin: 0 auto;
+        }
+        /*.login h1 {
+        	background: #ffffff;
+        	padding-top: 50px;
+        }
+        .login form {
+        	margin-top: 0;
+        	padding-top: 10px;
+        	-webkit-box-shadow: none;
+        	box-shadow: none;
+        }
+        .login label {
+        	font-family: "adobe-garamond-pro",serif;
+        	font-style: italic;
+        }
+        .login #backtoblog, .login #nav {
+        	font-family: "open-sans",sans-serif;
+        }
+		.wp-core-ui .button-group.button-large .button, .wp-core-ui .button.button-large {
+			height: 40px;
+			line-height: 28px;
+			padding: 0px 12px 2px;
+			width: 100%;
+			margin-top: 20px;
+		}
+		.login .button-primary {
+			float: none;
+		}
+		.wp-core-ui .button-primary {
+			background: #4d4d4d;
+			border-color: none;
+        	-webkit-box-shadow: none;
+        	box-shadow: none;			
+		}
+		.wp-core-ui .button, .wp-core-ui .button-secondary {
+        	-webkit-box-shadow: none;
+        	box-shadow: none;
+		}
+		.wp-core-ui .button, .wp-core-ui .button-primary, .wp-core-ui .button-secondary {
+			border-radius: none;
+			-webkit-border-radius: none;
+		}
+		input[type=checkbox], input[type=radio], input[type=checkbox], input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=radio], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select, textarea {
+			box-shadow: none;
+			-webkit-box-shadow: none;
+		}
+		#wp-auth-check-wrap #wp-auth-check {
+			background: white;
+		}*/
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
+// Change the link values so the logo links to my WordPress site
+
+function my_login_logo_url() {
+    return home_url();
+}
+add_filter( 'login_headerurl', 'my_login_logo_url' );
+
+function my_login_logo_url_title() {
+    return 'Russell Gividen';
+}
+add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 
 /* MISC EXTRAS
 =========================== */
