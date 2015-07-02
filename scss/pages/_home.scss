@@ -12,12 +12,14 @@
 	}
 }
 .intro-text {
-	color: $carbon;
+	color: $mountain;
 	text-align: center;
-	-webkit-font-smoothing: antialiased;
 	@include bp(mama-bear) {
 		width: 755px;
 		margin: 0 auto;
+	}
+	h2 {
+		font-weight: 400;
 	}
 	p {
 		font-size: 1.25em;

@@ -3,7 +3,6 @@ body {
 	margin: 0;
 	padding: 0;
 	min-width: $width-outer;
-	padding-top: 60px;
 }
 #page {
 	width: $width;
@@ -55,4 +54,4 @@ body {
 	overflow: hidden;
 }
 /* Sticky footer */
-@include sticky-footer(200px, '#page','#main','#colophon');
+@include sticky-footer(100px, '#page','#main','#colophon');
