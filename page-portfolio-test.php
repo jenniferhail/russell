@@ -11,10 +11,6 @@ get_header(); ?>
 
 <section id="primary" role="main">
 
-    <header class="entry-header">
-        <h1 class="entry-title portfolio-page-title"><?php the_title(); ?></h1>
-    </header><!-- .entry-header -->
-
 <ul class="load-portfolio">
 
     <li class="active"><a href="#" class="all">All</a></li>

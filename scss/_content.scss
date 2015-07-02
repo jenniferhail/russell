@@ -8,7 +8,6 @@
 .type-post,
 .type-portfolio {
 	//border-bottom: $border;
-	background-color: $white;
 	margin: 0 0 45px;
 	padding: 15px;
 	@include bp(mama-bear) {
@@ -24,7 +23,6 @@
 //	}
 //}
 .type-page {
-	background-color: $white;
 	margin: 0 0 45px;
 	padding: 15px;
 	@include bp(mama-bear) {

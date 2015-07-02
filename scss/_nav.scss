@@ -10,6 +10,9 @@
 		list-style: none;
 		li {
 			display: inline-block;
+			&.current-menu-item {
+				color: $hover;
+			}
 			a {
 				letter-spacing: 0.1em;
 				padding: 0 0 0 25px;
