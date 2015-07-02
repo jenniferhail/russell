@@ -22,8 +22,7 @@
 
     	<div id="copyright">
     		<aside class="widget">
-	        	&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?><br>
-	        	<a href="http://jenniferhail.com" rel="nofollow">Theme by Jennifer Hail</a>
+	        	&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> | Site by <a href="http://bypine.co" rel="nofollow">Pine</a>
 	        </aside>
     	</div>
 

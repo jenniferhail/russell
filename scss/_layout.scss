@@ -22,11 +22,11 @@ body {
 }
 #primary-foot {
 	margin: auto;
-	width: 95%;
-	padding: 45px 15px;
-	@include bp(mama-bear) {
-		width: 80%;
-	}
+	width: 100%;
+	padding: 18px 0;
+	// @include bp(mama-bear) {
+	// 	width: 80%;
+	// }
 }
 #content {
 	margin: 0;
@@ -52,6 +52,7 @@ body {
 #colophon {
 	clear: both;
 	overflow: hidden;
+	padding: 0 25px;
 }
 /* Sticky footer */
-@include sticky-footer(100px, '#page','#main','#colophon');
+@include sticky-footer(60px, '#page','#main','#colophon');
